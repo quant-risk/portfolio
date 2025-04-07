@@ -1,0 +1,58 @@
+---
+title: "Sorte e Apostas"
+author: "Henrique Costa"
+date: "2024-04-16"
+categories: [Tomada de Decisão, Riscos]
+description: "Apresentação feita para o projeto de Seminários do Programa de Pós-Graduação em Economia da Universidade Federal de Mato Grosso."
+image: "feature.png"
+title-block-banner: true
+doi: 10.59350/s9btn-bfx74
+---
+
+![](feature.png)
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+Aqui voce pode encontrar a apresentação: [Link da Apresentação](https://hcostax.quarto.pub/sorte_apostas/)
+
+
+<br>
+
+
+<!-- Aqui você se cadastra para participar do sorteio dos livros: [Link para o Formulário](https://forms.gle/mCN6j8CTEWY66PX27) -->
+
+<br>
+
+
+<br>
+
+
+<br>
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+
+
+You can also reproduce this by choosing the city you want.
+
+Check out the complete code on my [Github](https://github.com/hcostax/01---Desafio_EconomistaVisual).
+
+::: callout-note
+# Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
+
+<a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug =hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"/></a>
+:::

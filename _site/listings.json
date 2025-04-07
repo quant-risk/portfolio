@@ -1,0 +1,32 @@
+[
+  {
+    "listing": "/atom.html",
+    "items": [
+      "/blog/financial_cycle_credit_01/index.html",
+      "/blog/modelling_foundations/index.html",
+      "/blog/sorte_apostas/index.html",
+      "/blog/regression/index.html",
+      "/blog/risk_intro/index.html",
+      "/blog/r_or_python/index.html",
+      "/blog/desafio_EconViz_01/index.html",
+      "/blog/economists_in_data_science/index.html",
+      "/blog/maths_economics/index.html",
+      "/blog/ceteris_paribus/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/financial_cycle_credit_01/index.html",
+      "/blog/modelling_foundations/index.html",
+      "/blog/sorte_apostas/index.html",
+      "/blog/regression/index.html",
+      "/blog/risk_intro/index.html",
+      "/blog/r_or_python/index.html",
+      "/blog/desafio_EconViz_01/index.html",
+      "/blog/economists_in_data_science/index.html",
+      "/blog/maths_economics/index.html",
+      "/blog/ceteris_paribus/index.html"
+    ]
+  }
+]

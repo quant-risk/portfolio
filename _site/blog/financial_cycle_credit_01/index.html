@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Henrique Costa">
+<meta name="dcterms.date" content="2024-10-19">
+<meta name="description" content="This is the first part of a series of articles that will address financial cycles in Brazil. Economic literature suggests that Credit Granting can be used as a proxy for the Financial Cycle, which tends to present a boom before the onset of a recession.">
+
+<title>Financial Cycle: Credit - Part I | Henrique Costa – Risk Taker!</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../../assets/img/favicon/logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6C0FRWPTTF"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6C0FRWPTTF', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"headline",
+  "consent_type":"express",
+  "palette":"dark",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
+
+
+<meta name="twitter:title" content="Financial Cycle: Credit - Part I | Henrique Costa">
+<meta name="twitter:description" content="This is the first part of a series of articles that will address financial cycles in Brazil. Economic literature suggests that Credit Granting can be used as a proxy for the Financial Cycle, which tends to present a boom before the onset of a recession.">
+<meta name="twitter:image" content="https://hcostax.com/blog/financial_cycle_credit_01/feature.svg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/img/favicon/logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Risk Taker!</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/index.html"> 
+<span class="menu-text">Portfólio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/index.html"> 
+<span class="menu-text">Curriculum Vitae</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns">
+<div id="title-block-header-title" class="quarto-title page-columns page-full page-layout-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);">
+<h1 class="title">Financial Cycle: Credit - Part I</h1>
+    <div class="quarto-categories">
+        <div class="quarto-category">Risk</div>
+        <div class="quarto-category">Credit</div>
+        <div class="quarto-category">Cycle</div>
+        <div class="quarto-category">DataViz</div>
+      </div>
+  </div>
+
+<div>
+  <div id="title-block-title-desc" class="description pt-4">
+    This is the first part of a series of articles that will address financial cycles in Brazil. Economic literature suggests that Credit Granting can be used as a proxy for the Financial Cycle, which tends to present a boom before the onset of a recession.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Henrique Costa </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 19, 2024</p>
+    </div>
+  </div>
+  
+    
+    <div>
+    <div class="quarto-title-meta-heading">Doi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://doi.org/10.59350/tne4j-4je60">10.59350/tne4j-4je60</a>
+      </p>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro">Intro</a></li>
+  <li><a href="#credit-concessions" id="toc-credit-concessions" class="nav-link" data-scroll-target="#credit-concessions">Credit concessions</a></li>
+  <li><a href="#credit-gap-a-warning-of-recession" id="toc-credit-gap-a-warning-of-recession" class="nav-link" data-scroll-target="#credit-gap-a-warning-of-recession">Credit gap: a warning of recession?</a>
+  <ul class="collapse">
+  <li><a href="#visualizing-gaps" id="toc-visualizing-gaps" class="nav-link" data-scroll-target="#visualizing-gaps">Visualizing gaps</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+<!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
+<!-- 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title"> 
+-->
+<!-- <header id="title-block-header" class="quarto-title-block default page-columns"> -->
+<!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
+
+
+
+<p><a href="feature.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="feature.svg" class="img-fluid"></a></p>
+<p><br></p>
+<p>After a really cool chat over coffee with my friend Catarina and some discussions on the topic of cycles and time series with my friends <a href="https://www.linkedin.com/in/emanuella-c-duarte-64839717b/">Emanuella</a> and <a href="https://www.linkedin.com/in/patr%C3%ADcia-melo-46a928b0/">Patrícia</a>, I thought about writing an article here for this blog and resurrecting it, updating and improving an analysis I did some time ago and published on LinkedIn, which can be accessed through this link: <a href="https://www.linkedin.com/feed/update/urn:li:activity:6874875270143209472/">Credit Granting can be used as a proxy for the Financial Cycle, which tends to present a “boom” before the beginning of a recession.</a></p>
+<p>Based on the study <a href="https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Paper3_PUC.pdf">“The Financial Cycle in Brazil”</a> carried out in the 3rd Project of the 2018 <a href="https://portal.febraban.org.br/pagina/3252/23/pt-br/convenio-cooperacao-2017-2018">Agreement between FEBRABAN (Brazilian Federation of Banks) and PUC - Rio (Pontifical Catholic University of Rio de Janeiro)</a>, where the authors describe the five main stylized characteristics of the financial cycle based on the work of <a href="https://www.bis.org/publ/work395.pdf">Borio (2012)</a>, which are:</p>
+<ul>
+<li><p>Characteristic 1: <strong>it is described more parsimoniously in terms of credit</strong> and real estate prices.</p></li>
+<li><p>Characteristic 2: it has a much lower frequency than the traditional business cycle.</p></li>
+<li><p>Characteristic 3: its peaks are closely associated with financial crises.</p></li>
+<li><p>Characteristic 4: it helps to detect risks of financial difficulties with a good advantage in real time.</p></li>
+<li><p>Characteristic 5: its duration and amplitude depend on policy regimes.</p></li>
+</ul>
+<p>In this paper, we will focus on seeing only part of the first characteristic, in which the financial cycle is described in a more parsimonious way in terms of credit.</p>
+<p><em>If you want me to develop part 2 onwards, analyzing the other characteristics, <a href="https://www.linkedin.com/posts/hcostax_cr%C3%A9dito-como-proxy-para-ciclos-financeiros-activity-7254526734656544770-hcGr?utm_source=share&amp;utm_medium=member_desktop">leave a comment here or in the LinkedIn post at this link</a></em></p>
+<p><br></p>
+<section id="intro" class="level1">
+<h1>Intro</h1>
+<p>I will start with the definition of a cycle: a cycle is a low-frequency variation event. Just because it is a low-frequency event does not mean it will only be a short-term variation event. Cycles can have short or long durations, and are generally not standardized.</p>
+<p>Standardized variation events, that is, events that have homogeneous behavior over time, are generally characteristic of a seasonal event. Seasonality is called a “known component”, precisely because it is a standardized event. If it is standardized, it will always have homogeneous behavior, and thus its future trajectory is “known”.</p>
+<p>A cycle is different from a seasonal event, even though it may somehow assume behavior that appears to be homogeneous, but its future trajectory is unknown.</p>
+<p>Cycles are important in general, because economies tend to experience periods of expansion and correction (recession) of activities, especially financial ones, in which the granting of credit generates more activity. The financial cycle is the period from the initial investment to the return on investment, but the financial cycle here will be characterized as the credit cycle, since the credit cycle is a proxy for the aggregate financial cycle.</p>
+<p>In most cases, investment begins with credit, for the simple fact that third-party capital has a lower cost than equity, so credit is taken out to invest. The generation of revenue, cash and profit subsequently generates the full payment of the principal plus interest on the credit taken out. Increasing credit concessions indicate an expanding business environment, therefore a buoyant economy, and when there is a reduction in credit concessions, the opposite is true. From this perspective, credit concessions will act as a proxy for the financial cycle.</p>
+<p>There are reports in the economic literature that financial booms (characterized as a strong expansion in the granting of credit) create conditions for recession and unemployment, as experienced in the great international financial crisis of 2008. This is if you, dear reader, were born before 1991 (generation Y or millennials). If you were born after 1992, I’m sorry, but you didn’t even feel this crisis.</p>
+<p>As the literature assumes, if there is a boom, at some point there will be a bust (correction or recession). And such a financial bust can temporarily synchronize the financial and business cycles, even though financial cycles can be much longer than business cycles.</p>
+<p>Estimating or analyzing the financial cycle is very important to observe the levels of economic activity and test market expectations. The financial cycle is also important for macroprudential issues, which is connected with the regulation of the national financial system, by the Central Bank of Brazil, which in its agenda, tries to implement the Basel III framework, which talks about the countercyclical buffer, which uses the idea of the financial cycle.</p>
+</section>
+<section id="credit-concessions" class="level1">
+<h1>Credit concessions</h1>
+<p>After starting our discussion with this introduction about cycles, let’s talk a little about credit granting. Personally, I didn’t want to choose the stocks of credit operations and instead, I chose credit granting as a proxy variable for the financial cycle, for the simple fact that I wanted to, the analysis is mine and I choose the variable I want, just kidding (hahahaha).</p>
+<p>I chose credit granting because it represents in an aggregated way the encounter between credit supply and demand (selected by hand, or rather, by models), because in the future I want to analyze information asymmetries, try to assess whether, on average, the models have dealt well with adverse selection.</p>
+<p>I understand that stocks could also provide me with such an investigation, but stocks are cumulative aggregates and in my perception it could generate a dirty time series, carrying a smoothing that would hinder the decomposition of the components. And oh, it’s worth mentioning that these reasons I’m listing are just an excuse, the real reason is that I didn’t visually like the graph of the credit stock series (hahahaha).</p>
+<p>Well, let’s go.</p>
+<p>Below I present to you the time series of Credit Grants (Total). The definition on the website of the Central Bank of Brazil is: Value (in millions of Brazilian reais) of new credit operations contracted in the reference period in the National Financial System. Includes operations contracted in the free credit segment and in the directed credit segment. Here is the aggregated series, without distinction of the type of credit taker, whether it is personal credit or corporate credit.</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="480"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>In the graph above, we have the time series of total credit concession for the end of each period (monthly), and in blue we have the total credit concessions with seasonal adjustment. Both series are made available by the Central Bank of Brazil, through the time series management system, and obviously, for educational purposes, I will use the series with seasonal adjustment.</p>
+<p>However, I will use the disaggregated series for the type of credit taker. We have two configurations: credit for individuals or personal credit, and credit for legal entities or corporate credit. Next, we can observe the composition of total credit concessions based on these two types of borrower.</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="480"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We can observe a slow decline in the granting of credit to companies, as the proportion is decreasing over time, and currently it is below 50%. People are taking out more credit than companies.</p>
+<p>This makes us think about the basic hypothesis of financial cycles in resonance with business cycles: investment and return. Companies are taking out less credit, where less credit means less investment, if there is less investment, then we will have less return. Or we can think of it another way: are companies having difficulty accessing credit lines? Leave your opinion on this in the comments.</p>
+<p>Apparently, the promotion of investment in companies via credit is decreasing, but people are accessing more credit. More credit means more debt, greater commitment of income, but it also means more consumption. If people are having less difficulty than companies in accessing credit lines, and this credit is aggregated into several lines, including loans and financing (vehicles and real estate).</p>
+<p>If this is true, more credit means increased consumption, which generates more income in the economy, and this could therefore lead to some degree of demand inflation. Have prices been rising? Tell me in the comments if you have observed the price indexes in recent months, and if you have perceived this increase in prices.</p>
+<p>One point to note: it is precisely these movements that can generate a possible correction. Greater credit concession is the cyclical expansion, if this credit becomes non-performing, it can generate a correction (recession). Why is this? Because more credit can mean more income in the economy, but it does not necessarily mean greater returns for companies.</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="480"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>Here we have a graph where we can observe the accumulated variation rate throughout the period of the collected time series. It is possible to see exactly this difference between the two types of borrowers.</p>
+<p>But I don’t know if you were paying attention when you saw this graph, but it’s all a matter of perspective. I took the trouble to make a cut in this graph, starting from the beginning of the covid-19 pandemic.</p>
+<p>I made a cut in the data starting from February 2020, and calculated the variation rates of both. After that, I normalized the series as an accumulated growth rate so that I could observe the trajectory of each of them from the same point, which in this case is zero.</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-5-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="480"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>At the beginning of the pandemic, the Federal Government and the National Bank for Economic and Social Development (BNDES) announced credit programs for small businesses, including working capital and payroll financing – but many of these have not reached small businesses.</p>
+<p>In addition to this credit initiative, there have been others, but it is from here that we see things changing course. While we see credit being granted to people in general, there has been an increase for companies, and I believe this was the effect of this first credit initiative. But if you are more curious about this subject, <a href="https://g1.globo.com/economia/noticia/2020/05/16/em-crise-pequenas-empresas-tem-dificuldade-de-acessar-linhas-de-credito.ghtml">access this link with the full news</a> (note: this is in Brazilian Portuguese)</p>
+<p>Without further ado, let’s take a look at the behavior of the series. Let’s start with the “Total” series and then look at the personal credit series (here we will call it CCPF - granting of credit to individuals) and corporate credit (here we will call it CCPJ - granting of credit to legal entities).</p>
+<p><br></p>
+</section>
+<section id="credit-gap-a-warning-of-recession" class="level1">
+<h1>Credit gap: a warning of recession?</h1>
+<p>In economic literature, more specifically in macroeconomic theories, there are real business cycles, which are widely used to assess whether economic activity conditions are putting pressure on inflation through a factor called the output gap.</p>
+<p>The output gap is an indicator calculated by the difference between a country’s current Gross Domestic Product (GDP) and potential GDP. Potential GDP can be understood as the level of output that a country can produce when its production factors are not idle. The output gap can be positive or negative. A positive gap can indicate the effects of an irresponsible fiscal policy, while a negative gap signals that the economy may be operating below its potential.</p>
+<p>Just as this output gap theory works for GDP and its real business cycles, it can also work for financial cycles. Since credit granting is our proxy variable for the financial cycle, we will calculate the credit granting gap, or rather, actual credit and potential credit, to find the gap.</p>
+<p>In the literature on the subject, it is common to refer to this process of calculating the gap as “Filtering macroeconomic series”. In other cases, you may find a different term: “Decomposition of time series”.</p>
+<p>It doesn’t matter which term we use here, but for the sake of educational example, I will call it decomposition. Why? Because I thought the term decomposition was cooler, since filtering didn’t appeal to me hahahaha. But filtering makes a little more sense, since we will extract the components of the time series, between cycle and trend, since our series is already seasonally adjusted.</p>
+<p>Here I will test two methods, a very common one (older, with more criticisms, but on average it works very well) and a modern one (it is a more recent method, and I found it to be very robust).</p>
+<p>The most common and simple one is the HP Filter (Hodrick-Prescott), well known in the economic literature. There are many criticisms about it, but I must say that I was impressed, because in some papers I read, it seemed to work very well. I believe that for its time, it must have been the pinnacle. The modern one is a method known as Empirical Mode Decomposition (EMD), but I will use an adapted version, Complete Ensemble Empirical Mode Decomposition with Adaptive Noise (CEEMDAN). I am leaving this paragraph only for the curious!</p>
+<p>First we will estimate the trend and cycle through the HP filter, and then through CEEMDAN.</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-6-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="624"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>The algorithm is very simple and runs very easily on any computer. The graph above shows us the components of interest: trend and cycle. For now, for educational purposes, we will focus only on the red line, which is what I am interested in.</p>
+<p>Now let’s look at the result of the CEEMDAN algorithm, which is a little complicated and requires a much greater computational effort than the HP filter. The graph is not as pretty as the HP filter, but it will show us the components that CEEMDAN calculated for us.</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-7-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="480"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>Here it is the same thing, we will focus only on the “residual” series because that is what interests us, as it will be a proxy for the trend, just like in the HP filter.</p>
+<p>Now that we have the trend lines of both methods, we will use them to build the comparison graph, between the trends and the total credit granting with seasonal adjustment (an important detail is to always remember the seasonal adjustment).</p>
+<p>But before we see the final result, I would like to recall the first paragraphs of this topic, where I comment on the output gap, or rather, on the financial gap (credit gap), where I commented that the gap is found through the difference between the “Effective Factor” and the “Potential Factor”.</p>
+<p>For educational purposes, the potential factor will be represented by the trend curve, and the effective factor will be represented by the total credit concession series itself.</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-8-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="480"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>Without much mystery, the graph is composed of effective credit and potential credit. In addition, the shaded areas represent the periods of recession dated by the Economic Cycle Dating Committee (CODACE), created by the Brazilian Institute of Economics (FGV IBRE).</p>
+<p>But CADACE dated the business cycles (GDP), so I wanted to bring the dates to the graph for comparison. If the hypothesis that the boom in the financial cycle can generate conditions for recession (correction) in the business cycle, then we would be able to observe in the graph, when this information is superimposed.</p>
+<p>In this time frame, we can only observe two moments dated as recession, but we have three periods of expansion, in which the last one seems accelerated, which may seem like a boom in the business cycle. I could be wrong, and if you know about this subject, leave it in the comments.</p>
+<p>The cool thing is that we can see in the graph that when actual credit persistently exceeds potential credit, there is always room for correction.</p>
+<p>The dashed line separates the end of the series from the projection. Here, without further ado, I did not use ARIMA, I used a forecast through a model called Prophet, which, if I’m not mistaken, was created by Facebook (now Meta).</p>
+<p>What do you think? Does this graph explain the idea that the financial cycle tends to experience a boom before the start of a recession? Leave your opinion in the comments.</p>
+<section id="visualizing-gaps" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-gaps">Visualizing gaps</h2>
+<p><br></p>
+<p>To conclude this first article, let’s look at the graph of the financial gap through the credit cycle estimated by the HP filter and the CEEMDAN algorithm.</p>
+<p>For educational purposes, the gap is the difference between potential credit and effective credit.</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="480"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>Tell me in the comments what you think of this chart. Which cycle best captures business cycles?</p>
+<p>To conclude, I tried to explore the Harding &amp; Pagan (2002) algorithm for dating cycles. In short, I applied it to the total credit granting series, to try to find short-term cycles.</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-10-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="480"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>If you are unable to comment here, you can go to the updated post I made on LinkedIn about this article <a href="https://www.linkedin.com/posts/hcostax_cr%C3%A9dito-como-proxy-para-ciclos-financeiros-activity-7254526734656544770-hcGr?utm_source=share&amp;utm_medium=member_desktop">AT THIS LINK HERE</a>. I would really appreciate it if you would like to contribute to the text, or if you have any corrections or adjustments to suggest to me. Thank you very much for your time.</p>
+<p><br></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug =hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"></a></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-costa2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Costa, Henrique. 2024. <span>“Financial Cycle: Credit - Part I.”</span>
+October 19, 2024. <a href="https://doi.org/10.59350/tne4j-4je60">https://doi.org/10.59350/tne4j-4je60</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/hcostax\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="hcostax/hcostax_dot_com" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Henrique Costa ∙ Made with <a href="https://quarto.org">Quarto</a> based on <a href="https://paulrjohnson.net/">paulrjohnson.net</a></p>
+</div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../contact.html">
+<p>Contact</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../license.html">
+<p>License</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false,"descPosition":"bottom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

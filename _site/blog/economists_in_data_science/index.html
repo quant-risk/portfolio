@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Henrique Costa">
+<meta name="dcterms.date" content="2018-10-29">
+<meta name="description" content="Economics and Data Science">
+
+<title>Can Economists Become Data Scientists? | Henrique Costa – Risk Taker!</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../../assets/img/favicon/logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6C0FRWPTTF"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6C0FRWPTTF', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"headline",
+  "consent_type":"express",
+  "palette":"dark",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #FFFFFF;
+      }
+</style>
+
+
+<meta name="twitter:title" content="Can Economists Become Data Scientists? | Henrique Costa">
+<meta name="twitter:description" content="Economics and Data Science">
+<meta name="twitter:image" content="https://hcostax.com/blog/economists_in_data_science/feature.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/img/favicon/logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Risk Taker!</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/index.html"> 
+<span class="menu-text">Portfólio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/index.html"> 
+<span class="menu-text">Curriculum Vitae</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns">
+<div id="title-block-header-title" class="quarto-title page-columns page-full page-layout-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);">
+<h1 class="title">Can Economists Become Data Scientists?</h1>
+    <div class="quarto-categories">
+        <div class="quarto-category">Economics</div>
+        <div class="quarto-category">Theory</div>
+        <div class="quarto-category">Data Science</div>
+        <div class="quarto-category">Econometrics</div>
+      </div>
+  </div>
+
+<div>
+  <div id="title-block-title-desc" class="description pt-4">
+    Economics and Data Science
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Henrique Costa </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 29, 2018</p>
+    </div>
+  </div>
+  
+    
+    <div>
+    <div class="quarto-title-meta-heading">Doi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://doi.org/10.59350/ggmnk-ke432">10.59350/ggmnk-ke432</a>
+      </p>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#why-can-an-economist-be-a-data-scientist" id="toc-why-can-an-economist-be-a-data-scientist" class="nav-link active" data-scroll-target="#why-can-an-economist-be-a-data-scientist">Why can an economist be a data scientist?</a></li>
+  <li><a href="#ok-and-so-is-an-economist-a-data-scientist-or-not-how-it-works" id="toc-ok-and-so-is-an-economist-a-data-scientist-or-not-how-it-works" class="nav-link" data-scroll-target="#ok-and-so-is-an-economist-a-data-scientist-or-not-how-it-works">OK! And so? Is an Economist a Data Scientist or not? How it works?</a>
+  <ul class="collapse">
+  <li><a href="#economist-already-knows-machine-learning" id="toc-economist-already-knows-machine-learning" class="nav-link" data-scroll-target="#economist-already-knows-machine-learning">Economist already knows machine learning!</a></li>
+  <li><a href="#economists-have-higher-standards" id="toc-economists-have-higher-standards" class="nav-link" data-scroll-target="#economists-have-higher-standards">Economists have higher standards</a></li>
+  <li><a href="#economists-really-know-how-to-write-coherent-reports" id="toc-economists-really-know-how-to-write-coherent-reports" class="nav-link" data-scroll-target="#economists-really-know-how-to-write-coherent-reports">Economists really know how to write coherent reports!</a></li>
+  <li><a href="#learning-programming-is-not-difficult" id="toc-learning-programming-is-not-difficult" class="nav-link" data-scroll-target="#learning-programming-is-not-difficult">Learning programming is not difficult</a></li>
+  <li><a href="#so-why-doesnt-anyone-tell-you-this" id="toc-so-why-doesnt-anyone-tell-you-this" class="nav-link" data-scroll-target="#so-why-doesnt-anyone-tell-you-this">So why doesn’t anyone tell you this?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+<!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
+<!-- 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title"> 
+-->
+<!-- <header id="title-block-header" class="quarto-title-block default page-columns"> -->
+<!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
+
+
+
+<p><a href="feature.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="feature.jpg" class="img-fluid"></a></p>
+<p>When it comes to job titles, data scientist is one of the biggest buzzwords in recent years. It is also one of the fastest growing fields of professional activity. Can an economist really be a data scientist? What skills are needed?</p>
+<p>Exposed as the <a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century">“sexiest job of the 21st century”</a> by <strong><em>Harvard Business Review</em></strong>, here I will discuss the reasons why an economist proclaims himself as a Data Scientist, and that goes far beyond <em>hype</em>.</p>
+<p>Data Scientist, this is the new field of activity that everyone is talking about these days, and that almost everyone wants to be part of it now. It is certainly a very interesting field of professional activity, as it was born from the combination of multidisciplinary and complementary techniques, which did not require much scientific formalism and academic consolidation to be called a Science or Profession. Why?</p>
+<p>The term and the field of activity have existed for a long time, but thinking about the <em>hype</em> that perhaps it is for a simple reason: the first to give themselves the luxury of calling themselves Data Scientist, were already excellent professionals in the techniques they corroborated for its creation, that is, they were already qualified professionals in certain areas that today have been shaped as necessary techniques to be a Data Scientist.</p>
+<p>It is not particularly easy to define Data Science as a whole or in main “necessary” techniques, but here I want to talk about why an economist can proclaim himself as a “Data Scientist”.</p>
+<p>As some people may know, on LinkedIn or elsewhere (social media), some professionals call themselves Data Scientists. But why? How did these people become data scientists? Why after studying Physics, Computer Engineering, Mathematics, Statistics, Economics or any other professional training are now suddenly part of this field? This is among other questions that many ask.</p>
+<section id="why-can-an-economist-be-a-data-scientist" class="level2">
+<h2 class="anchored" data-anchor-id="why-can-an-economist-be-a-data-scientist">Why can an economist be a data scientist?</h2>
+<p>The great thing here is that it is not necessary to study this in a “formal school”, such as professional courses, technologists or a university degree (of course, nowadays there are all these things, even postgraduate programs focused on this area , but as we are living in the information age, where a cascade of information is available on the internet and freely accessible, the need to have a certificate or diploma is almost nil), so why should I, as an economist, have the right to call me a Data Scientist?</p>
+<p>If you think about it, we are used to following the path where you graduate in a specific field like Economics, so you have the right to call yourself an Economist, but what happens when a new field is developing, and you are a part of it? of this growth, and also there was no specific degree or postgraduate degree to become a part of this field?</p>
+<p>Economists have a set of skills that can make them successful in this area. Economists have extensive training in articulating complex ideas, something that students in other disciplines often may not have, such as <em>business sense</em> where the value generated is <em>business insight</em>.</p>
+<p>We can ask Economics students a fuzzy question or problem and they answer it with <em>priori</em> and <em>posteriori</em> analysis based on information (data), and then convert it back into understandable words that a non-economist could understand . This is a very important skill to become a Data Scientist, and one that professionals lack.</p>
+<p>Most Data Scientists do not approach problems like Economists do, when they carry out their studies and analyzes using econometrics. In Data Science there is no unifying theory, the objective is to predict the results of the data, the approach has its merits, and predictions prevail in the industry.</p>
+<p>However, your training as an economist will help you avoid drawing some inappropriate conclusions from the data, as many data scientists don’t have the <em>feeling</em> for how deep structural changes can undermine predictions.</p>
+<p>But I want to suggest here that economics is — surprisingly — a great foundation for Data Science.</p>
+<p>Yes! Yes! Yes! Please give me a chance to explain further. I know I’m biased, but I believe there aren’t many courses that will give you better training to work in Data Science than economics.</p>
+</section>
+<section id="ok-and-so-is-an-economist-a-data-scientist-or-not-how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="ok-and-so-is-an-economist-a-data-scientist-or-not-how-it-works">OK! And so? Is an Economist a Data Scientist or not? How it works?</h2>
+<p>Looking closely at the descriptions of common positions in Data Science, and the range of subjects at universities that offer undergraduate courses in economics, one can quickly deduce that economics would not be the best training to have.</p>
+<p>Because most economics programs don’t teach programming languages and databases, not even about projects. What the hell is this <strong>R</strong> guy? <strong>Python</strong>? And what about <em>Hadoop</em>? And there’s still <em>Hive</em> and <em>Pig</em>? And now there’s <strong>TensorFlow</strong>. This has to be a joke!</p>
+<p>Specific skills such as programming and databases are not included in the curriculum or the most important, however, studying Economics can provide a <em>framework</em> that will allow you to learn specific skills quickly. And a good economic education is indeed a solid <em>background</em> to have.</p>
+<p>There are professionals who defend this thesis, as is the case of <a href="https://twitter.com/vitorwilherbr">Vítor Wilher</a>, who, in addition to having a master’s degree in economics and responsible for the website <a href="https://analisemacro.com.br/">Análise Macro</a>, He is also a teacher of several programming courses in the R language and data analysis.</p>
+<p>This discussion about the importance of knowing how to program a language as a tool that offers an excellent relationship between analytical capacity, data collection and presentation, as well as the potential that this can offer for students and professionals, especially for young people at the beginning of their careers in Economy.</p>
+<p>Some reasons that Economists make great Data Scientists, and that no one tells them:</p>
+<section id="economist-already-knows-machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="economist-already-knows-machine-learning">Economist already knows machine learning!</h3>
+<p>Before you think about stopping reading, thinking that this article is already “travelling” or that the writer must have gone to a very strange economics college to learn about machine learning, but be careful:</p>
+<p>Machine learning is really just a fancy word for statistical and predictive modeling that programmers invented to make their business look better, get more attention, and even keep non-participants out of their club. Maybe they should know something about economics, after all — scarcity raises prices! (laughter).</p>
+<p></p><div id="tweet-45148"></div><script>tweet=<!DOCTYPE html>
+<html lang="en" class="dog">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X / ?</title>
+    <meta name="version" content="1">
+    <link href="https://abs.twimg.com/favicons/twitter.3.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://abs.twimg.com/errors/fullscreen_errors-047ca1475a6efac7c9c89a9ff92b7a20.css">
+  </head>
+  <body dir="auto">
+    <div class="top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1519 200">
+        <defs/>
+        <path d="M708 103l9-5 13 1 2-2 5 1h8l1-1 42-5h7l7 3v1l12-2a9368 9368 0 0129-6l2-5 12 1 6-2 3 1 2 1v-2l13-2v1l4 2 7-1h1l17-3 1 2 4-1 18-7 3-1 4-1h9l13-1 1-4 3-2 13 1v2l22-2 10-3h6l10 5 16-5 15-3 2-1 8-4 6-2 12-1 7-2 8 5 7 1 22-9h7l5-1v-1l25-3 1 2 5 2v1h11l2 1 8-4h3l-1 1h11l10-6 6 3 9-1 4-1 1 1 1-2 6-1 1-1 10-2h2l7-5v1h4l3-1c11 0 23 2 34-3 2-2 7 0 10 0l12 1 4 1 9 2 12-1 11-3 11 1h4l10-6 17 1 2 1c9 2 19-3 22-11l1-1 9 1 15-5c3-1 9 4 9-5 5 0 5 3 5 7l2 3 4-1 4-2 9-4 3-3h3l8-4 6-3 26 2 7-4h18l7 1c10 3 13-6 17-12l8 4 3-1 14-3 15-2a38 38 0 01-5-1l-8-4 7-8 8-4-10-136-922 71 16 205z"/>
+        <path d="M-36 193l9-5 13 1 2-2 5 1h8l1-1 42-5h7l7 3v1l12-2a9328 9328 0 0129-6l2-5 12 1 6-2 3 1 2 1v-2l13-2v1l4 2 7-1h1l17-3 1 2 4-1 18-7 3-1 4-1h9l13-1 1-4 3-2 13 1v2l22-2 10-3h6l10 5 16-5 15-3 2-1 8-4 6-2 12-1 7-2 8 5 7 1 22-9h7l5-1v-1l25-3 1 2 5 2v1h11l2 1 8-4h3l-1 1h9a6 6 0 002 0l10-6 6 3 9-1 4-1a6 6 0 001 1l1-2 6-1 1-1 10-2h2l7-5v1h4l3-1c11 0 23 2 34-3 2-2 7 0 10 0l12 1 4 1 9 2 12-1 11-3 11 1h4l10-6 17 1 2 1c9 2 19-3 22-11l1-1 9 1 15-5c3-1 9 4 9-5 5 0 5 3 5 7l2 3 4-1 4-2 9-4 3-3h3l8-4 6-3 26 2 7-4h18l7 1c10 3 13-6 17-12l8 4 3-1 14-3 15-2a37 37 0 01-5-1l-8-4 7-8 8-4-10-136-922 71 16 205z"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="content">
+        <a href="https://twitter.com" title="X logo">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="x-logo"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+        </a>
+        <h1 id="header">Nothing to see here</h1>
+        <p id="description">Looks like this page doesn’t exist. Here’s a picture of a poodle sitting in a chair for your trouble.</p>
+
+          <a id="button_search" href="/" class="button">Looking for this?</a>
+
+      </div>
+      <img id="image" src="https://abs.twimg.com/errors/ErrorState_NotFound.png" alt="A primped poodle with a bow in its hair sitting in a chair like a human.">
+      <div class="footer">
+        <ul>
+          <li><a href="https://twitter.com/" id="footer_home">Home</a></li>
+          <li><a href="https://status.twitterstat.us/" id="footer_status">Status</a></li>
+          <li><a href="https://twitter.com/tos" id="footer_tos">Terms of Service</a></li>
+          <li><a href="https://twitter.com/privacy" id="footer_privacy">Privacy Policy</a></li>
+          <li><a href="https://support.twitter.com/articles/20170514" id="footer_cookie">Cookie Policy</a></li>
+          <li><a href="https://legal.twitter.com/imprint" id="footer_imprint">Imprint</a></li>
+          <li><a href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html" id="footer_ads">Ads info</a></li>
+          <li dir="ltr">&copy; X Corp. <span id="copyright-year">&emsp;&emsp;&emsp;&emsp;</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="https://abs.twimg.com/errors/404-8651f633fd193e0b546010676a4fac06.js"></script>
+
+;document.getElementById("tweet-45148").innerHTML = tweet["html"];<p></p>
+<p>A well-observed fact is that the first two modules of a machine learning course (I’m commenting on the most popular one on the Coursera website) are linear regression and logistic regression. (sarcastic laughter)</p>
+<p>Well, 99.99% of economists who took an introductory econometrics course, this may surprise you, but these economists probably have a deeper knowledge of linear regression than a junior or full-time data scientist.</p>
+<p>Just as it can be scary to come across names like “neural networks” or <em>“support vector machines — SVM”</em>, the economist would possibly have to work very hard, even break a sweat to find the term “heteroscedasticity” anywhere in machine learning programs.</p>
+<p>To learn more, access these guides:</p>
+<ul>
+<li><p><a href="http://karpathy.github.io/neuralnets/">Hacker’s guide to Neural Networks</a></p></li>
+<li><p><a href="http://iamtrask.github.io/2015/07/12/basic-python-network/">A Neural Network in 11 lines of Python</a></p></li>
+</ul>
+<p>But of course, neural networks can be a very deep field, much deeper than the way it has been described. Just like <em>Recurrent nets</em>, <em>convolutional nets</em>, <em>deep learning</em> are much more advanced and complex topics — and their algorithms are much more powerful.</p>
+<p>But for most machine learning applications, an economist should do just fine with simple models: basic neural networks, binary decision trees, regressions, SVMs. And with the statistical basis of most economics courses and econometric applications, you will have no problem understanding these concepts quickly.</p>
+</section>
+<section id="economists-have-higher-standards" class="level3">
+<h3 class="anchored" data-anchor-id="economists-have-higher-standards">Economists have higher standards</h3>
+<p>Can you recite all the basic assumptions of the OLS method? What about all the possible threats to the internal and external validity of your model that could compromise your analysis?</p>
+<p>Of course you can, I know you are nerds. (hahaha)</p>
+<p>At least in my experience as an academic, the discipline of econometrics was temporarily obsessed with finding causal relationships—and making it very clear how difficult this phenomenon is to observe without randomized controlled trials.</p>
+<p>Not to mention that most models are sensitive to their own basic assumptions. A serious talk would not end without someone mentioning another possible source of bias, attenuation bias, survival bias, selection bias, measurement error, reverse causality, truncation, censoring, omission, spurious correlation, etc.</p>
+<p>For each problem, there was another model — even more complicated — to deal with it. A model that could also introduce its own baggage of assumptions and problems. The world of econometrics became confusing and more nebulous as the disciplines advanced, in addition to creating the impression of being uncertain and frustratingly limiting. Then Artificial Intelligence, <em>Machine Learning</em> and Data Science emerged to illuminate this dark path.</p>
+<p><em><strong>Warning:</strong> gross exaggeration ahead.</em></p>
+<p></p><div id="tweet-90260"></div><script>tweet=<!DOCTYPE html>
+<html lang="en" class="dog">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X / ?</title>
+    <meta name="version" content="1">
+    <link href="https://abs.twimg.com/favicons/twitter.3.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://abs.twimg.com/errors/fullscreen_errors-047ca1475a6efac7c9c89a9ff92b7a20.css">
+  </head>
+  <body dir="auto">
+    <div class="top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1519 200">
+        <defs/>
+        <path d="M708 103l9-5 13 1 2-2 5 1h8l1-1 42-5h7l7 3v1l12-2a9368 9368 0 0129-6l2-5 12 1 6-2 3 1 2 1v-2l13-2v1l4 2 7-1h1l17-3 1 2 4-1 18-7 3-1 4-1h9l13-1 1-4 3-2 13 1v2l22-2 10-3h6l10 5 16-5 15-3 2-1 8-4 6-2 12-1 7-2 8 5 7 1 22-9h7l5-1v-1l25-3 1 2 5 2v1h11l2 1 8-4h3l-1 1h11l10-6 6 3 9-1 4-1 1 1 1-2 6-1 1-1 10-2h2l7-5v1h4l3-1c11 0 23 2 34-3 2-2 7 0 10 0l12 1 4 1 9 2 12-1 11-3 11 1h4l10-6 17 1 2 1c9 2 19-3 22-11l1-1 9 1 15-5c3-1 9 4 9-5 5 0 5 3 5 7l2 3 4-1 4-2 9-4 3-3h3l8-4 6-3 26 2 7-4h18l7 1c10 3 13-6 17-12l8 4 3-1 14-3 15-2a38 38 0 01-5-1l-8-4 7-8 8-4-10-136-922 71 16 205z"/>
+        <path d="M-36 193l9-5 13 1 2-2 5 1h8l1-1 42-5h7l7 3v1l12-2a9328 9328 0 0129-6l2-5 12 1 6-2 3 1 2 1v-2l13-2v1l4 2 7-1h1l17-3 1 2 4-1 18-7 3-1 4-1h9l13-1 1-4 3-2 13 1v2l22-2 10-3h6l10 5 16-5 15-3 2-1 8-4 6-2 12-1 7-2 8 5 7 1 22-9h7l5-1v-1l25-3 1 2 5 2v1h11l2 1 8-4h3l-1 1h9a6 6 0 002 0l10-6 6 3 9-1 4-1a6 6 0 001 1l1-2 6-1 1-1 10-2h2l7-5v1h4l3-1c11 0 23 2 34-3 2-2 7 0 10 0l12 1 4 1 9 2 12-1 11-3 11 1h4l10-6 17 1 2 1c9 2 19-3 22-11l1-1 9 1 15-5c3-1 9 4 9-5 5 0 5 3 5 7l2 3 4-1 4-2 9-4 3-3h3l8-4 6-3 26 2 7-4h18l7 1c10 3 13-6 17-12l8 4 3-1 14-3 15-2a37 37 0 01-5-1l-8-4 7-8 8-4-10-136-922 71 16 205z"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="content">
+        <a href="https://twitter.com" title="X logo">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="x-logo"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+        </a>
+        <h1 id="header">Nothing to see here</h1>
+        <p id="description">Looks like this page doesn’t exist. Here’s a picture of a poodle sitting in a chair for your trouble.</p>
+
+          <a id="button_search" href="/" class="button">Looking for this?</a>
+
+      </div>
+      <img id="image" src="https://abs.twimg.com/errors/ErrorState_NotFound.png" alt="A primped poodle with a bow in its hair sitting in a chair like a human.">
+      <div class="footer">
+        <ul>
+          <li><a href="https://twitter.com/" id="footer_home">Home</a></li>
+          <li><a href="https://status.twitterstat.us/" id="footer_status">Status</a></li>
+          <li><a href="https://twitter.com/tos" id="footer_tos">Terms of Service</a></li>
+          <li><a href="https://twitter.com/privacy" id="footer_privacy">Privacy Policy</a></li>
+          <li><a href="https://support.twitter.com/articles/20170514" id="footer_cookie">Cookie Policy</a></li>
+          <li><a href="https://legal.twitter.com/imprint" id="footer_imprint">Imprint</a></li>
+          <li><a href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html" id="footer_ads">Ads info</a></li>
+          <li dir="ltr">&copy; X Corp. <span id="copyright-year">&emsp;&emsp;&emsp;&emsp;</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="https://abs.twimg.com/errors/404-8651f633fd193e0b546010676a4fac06.js"></script>
+
+;document.getElementById("tweet-90260").innerHTML = tweet["html"];<p></p>
+<p>Compared to all this, machine learning is wonderfully, charmingly simpler. Instead of solving models explicitly — based on strict assumptions — they are estimated iteratively with the gradient method (and its derivatives). Rather than testing or validating the theory behind the event you are trying to study, and carefully selecting explanatory variables and the appropriate model, you can try everything you can think of and see if the answer holds up.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./img/einstein-machine-learning.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Albert Einstein: “Insanity is continuing to do the same thing over and over again and expecting different results.” Machine Learning:"><img src="./img/einstein-machine-learning.png" class="img-fluid figure-img" alt="Albert Einstein: “Insanity is continuing to do the same thing over and over again and expecting different results.” Machine Learning:"></a></p>
+<figcaption>Albert Einstein: “Insanity is continuing to do the same thing over and over again and expecting different results.” Machine Learning:</figcaption>
+</figure>
+</div>
+<p>Get used to cross-validation and testing, instead of <em>t-statistics</em>, why not try some <em>bootstrapping?</em> And talking about <em>bootstrapping</em>, there are already some studies going on the internet criticizing the use of this technique, but while the discussion does not consolidate, we will continue to use it.</p>
+<p>For economists who are enthusiastic about econometrics, this may seem pure blasphemy. But this is only because the expectation is high of finding the same ML that was expected in econometrics. Inference and causal interpretation. However, most of the time, ML is aimed at predicting and finding patterns, not causality. For some models, you can’t simply say which variables are most important in predicting outcomes.</p>
+<p>And yes! Unfortunately (I bring some truths) neural networks cannot be used to explain the causal effect of the minimum wage on unemployment. But Mr.&nbsp;Economist (who runs models) also cannot expect a model like logit (multinomial) to be used to recognize handwriting. What I want to say here is all about the correct use of the right tools in their applications — and I’m sure econometrics teaches you very well about this.</p>
+</section>
+<section id="economists-really-know-how-to-write-coherent-reports" class="level3">
+<h3 class="anchored" data-anchor-id="economists-really-know-how-to-write-coherent-reports">Economists really know how to write coherent reports!</h3>
+<p>In data science it’s not just about fancy algorithms, however, unless you’re an academic researcher who just writes theoretical papers (an isolated case, and if, only if, it’s true, you probably wouldn’t be reading this anyway). , the presentation of results and writing in a simple, concise and coherent way are present in economics.</p>
+<p>If an economist works as a data scientist anywhere in the “real world”, and will have to present his results to non-technical audiences — managers, marketers and writers, and clients — he will have to be able to show why your results are important and how normal people can use and act on them.</p>
+<p>As an economist, I bet that most economists wrote their fair share of articles, essays, reports, presentations and dissertations and theses in their temples — that little work or study room, gloomy and only inhabited by beings of their own species – - at university using <strong><em>MS Excel</em></strong>, perhaps a <strong><em>GRTL</em></strong>, the bravest <strong><em>E-Views</em></strong>, or even those <em>outliers</em> who venture into distant lands using * <strong>Stata</strong>*.</p>
+<p><strong>Don’t underestimate this skill.</strong> It might generate some comments about how archaic this is, but the fact is that probably having this skill puts the economist well ahead of most computer scientists and mathematicians, statisticians or any other professional when it comes to generating robust analyses, presenting and explaining your work clearly — and bringing together longer texts that have structures and logic behind them (at least that’s what should happen, now whether that actually happens I don’t know, I’ll let this curiosity in the air).</p>
+</section>
+<section id="learning-programming-is-not-difficult" class="level3">
+<h3 class="anchored" data-anchor-id="learning-programming-is-not-difficult">Learning programming is not difficult</h3>
+<p>Unfortunately, to be a data scientist you will probably have to write code scripts. But not excluding the fact that economists did not need to program either. It is true that using Stata can be seen as “programming”, however, it is not a “proper” programming language, but it is a great introduction for those starting out in statistical computing. And if there is a possibility to continue to graduate school, many economics programs use other languages—Python is very common, as are R and Matlab.</p>
+<p>To the delight of some, Python has become the “lingua franca” of data science, perhaps because it is a generalist language, in addition to being a very readable and easy-to-learn language. But <a href="https://twitter.com/hcostax">I</a> particularly like R (oops! Preference revealed, successfully detected), as it not only has a large selection of libraries, but also has a widely active community, in addition to be built precisely for this purpose.</p>
+<p>The preference for the R language is because it is also powerful, but the syntax is seen as an “ABOMINATION” by programmers of other languages. Matlab is commercial software, and although it is great (and fast) at mathematical computing, and also has an open source alternative (Octave), it is not that common. Julia is a very obscure language and still a little too young to be considered a language that would be well suited to the activities of a data scientist, but it is known so far that users here in Brazil are increasing, even some professionals at the Central Bank of Brazil already use Julia.</p>
+</section>
+<section id="so-why-doesnt-anyone-tell-you-this" class="level3">
+<h3 class="anchored" data-anchor-id="so-why-doesnt-anyone-tell-you-this">So why doesn’t anyone tell you this?</h3>
+<p>Ultimately, economists should declare themselves as great data scientists, or at least own that term, or do as little as possible to acquire it. But then why doesn’t anyone at university tell them that this is a “real world” career choice? On the one hand, one of the reasons is that everything is relatively new. And course structures are slow to change, and how long it takes — favoring more traditional options in finance, academia, government.</p>
+<p>In fact, the college I studied at has a <a href="http://www.roneyfraga.com/">professor</a>, better known as <a href="https://twitter.com/roneyfraga">Roney</a> who is striving to introduce this change, and add this to the training curriculum of undergraduate students, in addition to others such as professor <a href="https://www.facebook.com/profadrianomrfigueiredo/">Adriano</a> which has also adopted the use of these programming languages in teaching economics (to be more precise, in time series econometrics), but as said: the process is slow.</p>
+<p>But don’t think that economists can’t act as data scientists in these areas mentioned (finance, academia, government), quite the contrary, it’s becoming more common every day. But I also think that there is still a bit of prejudice (or perhaps, a bit of fear) in the economic world against data science, as they defend the thesis that an economist entering into data science is beneath the main cause, as they are concerned with bigger issues.</p>
+<p>I’m just sorry, because it’s a shame. Because economics gives its graduates a unique <em>blend</em> of (statistical) and <em>soft</em> (human) skills that are much harder to find in Mathematics departments. Computer Science, Statistics and others.</p>
+<p>And perhaps data science roles only benefit from having careful economists (econometric enthusiasts) doing the work. This way, econometricians can make the best use of ML when it comes to testing and cross-validation and algorithmic estimation approaches.</p>
+<p>So give yourself a chance and get to know this area that has immense growth potential for the future, and even <a href="https://qz.com/1296930/hal-varian-googles-chief-economist-thinks-the-world-needs-more-data-scientists/">Google’s Chief Economist</a> thinks the world needs more data scientists.</p>
+<p>See if this catches your attention, and don’t think that just because you don’t know what Hessians are, you can’t get into Data Science.</p>
+<p>I didn’t intend to make this a guide for economists on how to become data scientists. But it should possibly give you a lot of things to think about — and expand your range of possible career options. Keep an eye on the blog, as I will always be posting about this type of subject. In future publications I will be posting small applied exercises, using R or Python to awaken the reader’s curiosity to learn.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug =hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"></a></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-costa2018" class="csl-entry quarto-appendix-citeas" role="listitem">
+Costa, Henrique. 2018. <span>“Can Economists Become Data
+Scientists?”</span> October 29, 2018. <a href="https://doi.org/10.59350/ggmnk-ke432">https://doi.org/10.59350/ggmnk-ke432</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/hcostax\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="hcostax/hcostax_dot_com" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Henrique Costa ∙ Made with <a href="https://quarto.org">Quarto</a> based on <a href="https://paulrjohnson.net/">paulrjohnson.net</a></p>
+</div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../contact.html">
+<p>Contact</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../license.html">
+<p>License</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","selector":".lightbox","loop":false});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+<script src="https://platform.twitter.com/widgets.js"></script>
+</body></html>

@@ -1,0 +1,147 @@
+---
+title: Henrique Costa
+subtitle: Quant Finance and Risk Management | Strategy, Credit Risk and Profitability
+pagetitle: "Curriculum Vitae | Henrique Costa"
+
+header-includes: >
+  <link rel="stylesheet" href="../assets/cv.css">
+resources:
+  - ../assets/cv.css
+comments: false
+---
+
+## Education  {{< fa graduation-cap >}}
+
+\
+**M.Sc. Applied Economics**
+\
+*Federal University of Mato Grosso (Brazil)* [*2017 --- 2019*]{.cvdate}
+\
+\
+**B.A. Economics**
+\
+*Federal University of Mato Grosso (Brazil)* [*2013 --- 2017*]{.cvdate}
+\
+
+## Selected Work Experience  {{< fa briefcase >}}
+
+
+### Senior Credit and Market Risk Analyst
+
+***Credsystem, São Paulo, SP - Brazil*** [Jun 2024 --- Present]{.cvdate}
+
+Providing: 
+
+- Integrated Risks
+- Policies and Model Validation
+- Regulatory Risk - Prudential
+- Stress Test Program
+- Credit Risk modeling (Expected Losses models)
+- IFRS (9 & 17) modeling
+- CMN/BCB 4.966-21 & BCB 352-23
+- Market Risk
+  - $\Delta$ *NII* and $\Delta$ *EVE*
+  - Risk monitoring of market exposures (Value at Risk, VaR Stressed, CVaR-ES);
+- Enterprise Risk
+
+
+### Strategy, Credit Risk and Profitability
+
+***QuintoAndar, São Paulo, SP - Brazil*** [Oct 2022 --- Jun 2024]{.cvdate}
+
+Providing: 
+
+- Profitability modeling (NPV)
+- Credit Risk modeling (Expected Losses models)
+- IFRS (9 & 17) modeling
+- Enterprise Risk
+
+### Academic Advisor 
+
+***MBA in Data Science & Analytics - USP/Esalq, São Paulo, SP - Brazil*** [Sept 2021 --- April 2023]{.cvdate}
+
+Monograph advisor: 
+
+- Course Conclusion Paper Guidance for MBA students in Data Science & Analytics.
+
+### Financial and Regulatory Risk
+
+***Crefisa Bank, São Paulo, SP - Brazil*** [Feb 2022 --- Oct 2022]{.cvdate}
+
+Providing: 
+
+- Risk and Capital Management (BACEN based on the Basel agreement) for S4
+- Risk monitoring of market exposures (Value at Risk, VaR Stressed, CVaR-ES)
+
+- Financial Risk Management regulatory reports:
+  - Daily Risk Statement - DDR,
+  - Market Risk Statement - DRM,
+  - Liquidity Risk Statement - DRL,
+  - Statement of Operational Limits - DLO and
+  - Statement of Individual Limits - DLI.
+
+### Risk Analyst in Structured Finance
+
+***Liberum Ratings, São Paulo, SP - Brazil*** [Jan 2021 --- Feb 2022]{.cvdate}
+
+Providing: 
+
+- Risk assessment in Structured Finance (Specialized in Credit Rights Investment Funds - FIDC)
+- Assignment and monitoring of risk classifications (ratings)
+- Market risk assessments (macroeconomic)
+- Assessments of sectoral (microeconomic) risks
+
+### Retirement Fund Risk Analyst
+
+***Agenda Assessoria (Consultancy), Cuiabá, MT - Brazil*** [Jan 2020 --- Jan 2021]{.cvdate}
+
+Providing: 
+
+- Assessment of financial risks in investment fund portfolios
+- Development of investment policies for retirement funds
+- Monitoring of Economic Indicators 
+- Stress scenarios based on Foward-looking analysis 
+- Technical report of investment portfolio for Own Social Security System - RPPS (Retirement Fund Risk Assessments)
+- Market risk assessments (macroeconomic)
+- Assessments of sectoral (microeconomic) risks
+
+### Researcher and Data Analyst (Consultancy)
+
+***Fiemt - Federation of Industries in the State of Mato Grosso, Cuiabá, MT - Brazil*** [---]{.cvdate}
+
+Providing: 
+
+- Data wrangling process for industrial sector data.
+- Building dashboards (PowerBI)
+- Macroeconomic reports
+
+### Corporate Credit Analyst
+
+***Gerencial Factoring Fomento Mercantil, Cuiabá, MT - Brazil*** [Jan 2018 --- Oct 2019]{.cvdate}
+
+Providing: 
+
+- Credit and corporate risk analysis for credit assignment.
+- Operations for acquiring credit rights (anticipation of receivables).
+
+### Accounting and Finance Department Intern
+
+***Mato Grosso Cotton Growers Association - AMPA, Cuiabá, MT - Brazil*** [Dec 2015 --- Dec 2016]{.cvdate}
+
+- Intern, in the Accounting and Financial Control Department of the Mato Grosso Association of Cotton Producers (AMPA - Algodão de MT).
+
+### Teaching Assistant - Econometrics
+
+***Federal University of Mato Grosso (Brazil)*** [July 2014 --- Jan 2019]{.cvdate}
+
+- (When I was in undergraduate) Helping undergraduate students to understand the theoretical and practical basis for solving homework assignments, in addition to application in R language
+- Support for students who participated in the Introductory Data Science courses in R Language
+- (When I was in my master's degree) Assisting the econometrics teacher in introductory classes, applying and correcting econometrics tests, in addition to providing support with homework
+
+
+### Research Assistant
+
+***Federal University of Mato Grosso (Brazil)*** [Jan 2014 --- Dec 2015]{.cvdate}
+
+- Participating student, researcher assistant, (execution, economic statistics, production and market analysis) in the research project, Santander Universidade Solidária - Sustainable Development in the Pantaneira Hydrographic Basin: implementation of agroecological practices in Cooperangi - Poconé - MT, Banco Santander.
+

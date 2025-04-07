@@ -1,0 +1,46 @@
+---
+title: "A few words about risk management"
+author: "Henrique Costa"
+date: "2023-08-27"
+categories: [Management, Risk, Finance]
+description: "The official start of this page's main project: talk about financial risk management"
+image: "feature.jpg"
+doi: 10.59350/51paw-dza08
+---
+
+![](feature.jpg)
+
+I started this website some time ago with the aim of writing down the expansion of my knowledge and experience in the area of financial risk management. And also other things like programming with R, econometric modeling and a little about *data science* and *machine learning*. So I'm going to use this publication as a starting point, and start discussing texts and examples applied to financial risks.
+
+I am not going to give a general and complete description of what financial risk is and its management processes, as this can be easily found on sites like Wikipedia.
+
+But risk, in the most basic sense, is the possibility that bad things will happen. Humans have evolved to manage risks like wild animals do. However, our awareness of risk is not always adequate for the modern world.
+
+Behavioral science shows that we rely too much on our instincts and personal experience, as biases distort our thought processes. Furthermore, even the way we frame risk decisions irrationally influences our willingness to take risks.
+
+Yet surprisingly sophisticated examples of risk management can be seen early in history. In ancient times, merchants and their creditors shared the risk by tying loan repayment to the safe arrival of shipments through sea loans (i.e. combining loans with a type of insurance). [We can see some references here](https://risk-engineering.org/concept/history-of-insurance) and [here too.](https://core.ac.uk/download/pdf/289933444.pdf )
+
+The insurance contract separated from the loan contract as early as the 14th century in northern Italy, creating the first autonomous financial risk transfer instrument. From the 17th century onwards, a more methodical approach to the mathematics of risk can be traced. This was followed by the development of exchange-based risk transfer, in the form of agricultural futures contracts, in the 18th and 19th centuries. [Some other references here](https://www.jstor.org/stable/10.1086/ahr.111.2.307).
+
+This methodical approach continued to evolve in the 20th century and beyond, with major advances in financial theory in the 1950s; an explosion in risk management markets from the 1970s onwards; and the emergence of new instruments, such as cyber risk insurance, at the beginning of the 21st century. **Risk management is an ancient art, but a young science – and an even younger profession**.
+
+The way we think about risk is the biggest determinant of whether we recognize risks, assess them appropriately, measure them using appropriate risk metrics and manage them.
+
+In the next publications I will bring introductory content that will analyze risk definitions, the classic risk management process, the main types of risk and the tools used to track risks and make decisions.
+
+Most risk management disasters are caused by the failure to recognize and/or adequately address one or more of these fundamental elements, not by the failure of some sophisticated risk management technique. Century-old financial institutions have gone bankrupt because their risk management procedures ignored a certain type of risk, misunderstood the links between risks, or did not follow the classic steps of the risk management process. As we recently observed the failure of some financial institutions, both in Brazil and around the world.
+ 
+
+
+
+
+
+
+
+
+
+::: callout-note
+# Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
+
+<a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug =hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"/></a>
+:::

@@ -1,0 +1,39 @@
+---
+title: Project Portfolio
+subtitle: Selected Works from Quant Finance, Risk Management & Academia
+
+comments: false
+---
+
+## Quant Finance and Risk Management  {{< fa code-fork >}}
+
+- [PT-BR] Casting lots and placing bets: decision making under uncertainty and risk management - Talking/Presentation for the master's program in economics (UFMT). April 16, 2024.
+
+- Foundations of Risk Management (Working in Progress)
+
+- Cycle Theory and Risk Management (Working in Progress)
+
+- {crmvR} - A Practical R package for IFRS 9 and CECL Credit Risk Modelling and Validation. (Working in Progress)
+
+<!-- - Data Science Guides [[R](https://r-data-science-guides.netlify.app/)|[Python](https://python-data-science-guides.netlify.app/)] - Guides for common data science tasks, in R & Python. -->
+<!-- - [{scwplot}](https://nhs-south-central-and-west.github.io/scwplot/) - An R package for creating consistent SCW-style ggplot figures. -->
+<!-- - [CAIP App](https://rconnect-public.scwcsu.nhs.uk/caip/) - The PCN Capacity and Access Improvement Payment (CAIP) app. -->
+<!-- - [Expected Kills](https://github.com/Paulj1989/expected-kills) - Predicting kills in volleyball using XGBoost. -->
+<!-- - [Player Similarities](https://github.com/Paulj1989/player-similarities) - Using clustering methods to measure player similarity within positions. -->
+<!-- - [{nice}](https://github.com/Paulj1989/nice) - The stupidest R package ever created. -->
+
+<!-- ## Research Publications  {{< fa brain >}} -->
+
+<!-- - Johnson, P., & Cantu, F. (2020) ["The Nationalization of Mexican Parties"](https://www.dropbox.com/s/hziiab4k4u8im6p/Johnson%20%26%20Cantu%20%282020%29%20-%20The%20Nationalization%20of%20Mexican%20Parties.pdf?dl=0). *Política y Gobierno* 27 (2) -->
+
+## Papers & Research (Working in Progress)  {{< fa brain >}} 
+
+- [PT-BR] [COSTA, Henrique](https://www.linkedin.com/in/hcostax/) & [SOARES, Jadson](https://www.linkedin.com/in/jadson-soares-24b41996/). "Avaliação espacial da inadimplência (Non-Performing Loans) dos estados brasileiros baseado nos indicadores locais de associações espaciais (LISA)". (Working in Progress)
+
+
+- [COSTA, Henrique](https://www.linkedin.com/in/hcostax/). "Vintage Analysis: a tool for risk management". (Working in Progress)
+
+
+- [COSTA, Henrique](https://www.linkedin.com/in/hcostax/). "X-ray of credit default in Brazil". (Working in Progress)
+
+

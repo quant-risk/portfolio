@@ -1,0 +1,11 @@
+---
+date: "2024-03-27"
+title: "License"
+comments: false
+---
+
+The [blog posts](/blog) on this website are all released under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Please feel free to use and share anything you find valuable in these posts, but please cite me too!
+
+<center>
+{{< fa brands creative-commons size=2xl >}} {{< fa brands creative-commons-by size=2xl >}} {{< fa brands creative-commons-sa size=2xl >}}
+</center>

@@ -1,0 +1,16 @@
+---
+title: "Henrique Costa blog"
+search: false
+listing:
+  sort: "date desc"
+  feed: 
+    title: "Henrique Costa blog"
+    description: "Henrique Costa blog"
+    items: 50
+    type: full
+    language: en
+  contents:
+    - "blog/**/index.qmd"
+    - "!blog/index.qmd"
+comments: false
+---

@@ -1,0 +1,86 @@
+project:
+  type: website
+  resources:
+    - CNAME
+#     
+bibliography: assets/bib/references.bib
+csl: assets/bib/chicago-author-date.csl
+
+# Metadata stuff
+pagetitle: "{{< meta title >}} | Henrique Costa"
+author-meta: "Henrique Costa"
+
+website:
+  cookie-consent:
+    type: express
+    style: headline
+    palette: dark
+  google-analytics:
+    tracking-id: "G-6C0FRWPTTF"
+    anonymize-ip: true
+  title: "Risk Taker!"
+  site-url: https://hcostax.com
+  description: "Quant Risk Management (Finance)"
+  favicon: assets/img/favicon/logo.png
+  search: false
+  page-navigation: true
+  back-to-top-navigation: false
+  twitter-card: true
+  comments:
+    utterances:
+      repo: hcostax/hcostax_dot_com
+ 
+  navbar:
+    logo: assets/img/favicon/logo.png
+    tools:
+    # - icon: github
+    #   href: https://www.github.com/
+    right:
+      - text: Portfólio
+        aria-label: "Portfólio"
+        href: blog/index.qmd
+      # - text: Projects
+      #   aria-label: "Project Portfolio"
+      #   href: projects/index.qmd
+      # - text: Consultancy
+      #   aria-label: "Consultancy Enquiries"
+      #   href: consultancy/index.qmd
+      - text: Curriculum Vitae
+        aria-label: "Curriculum Vitae"
+        href: cv/index.qmd
+  
+  page-footer:  
+    left: >-
+     &#169; 2025 Henrique Costa &#8729; Made with [Quarto](https://quarto.org) based on [paulrjohnson.net](https://paulrjohnson.net/)
+
+    right: 
+      - text: "Contact"
+        aria-label: "Contact Form"
+        href: contact.qmd
+      - text: "License"
+        aria-label: "License Details"
+        href: license.qmd
+
+format: 
+  html:
+    theme: 
+      - cosmo
+      - assets/theme-light.scss
+    highlight-style: github
+    # set code-link to false until gh actions issues fixed
+    code-link: false
+    pagetitle: "{{< meta title >}} | Henrique Costa"
+    fig-align: center
+    lightbox: true
+    mermaid:
+      theme: neutral
+
+knitr:
+  opts_chunk: 
+    dev: "ragg_png"
+
+execute: 
+  warning: false
+  error: false
+  freeze: auto
+

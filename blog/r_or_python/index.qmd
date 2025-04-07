@@ -1,0 +1,58 @@
+---
+title: "For me, the choice was R or Python"
+author: "Henrique Costa"
+date: "2023-06-20"
+categories: [R, Python]
+description: "That old and tiring war between R-lovers and pythonists"
+image: "feature.jpeg"
+doi: 10.59350/83vew-1de35
+---
+
+![](feature.jpeg)
+
+
+Having decided to improve my skills in the short space of time left between my professional life and personal life, I started researching the available data science options. It quickly became clear that I should choose a programming language to learn and apply the techniques and the choice fell on R or Python, for me both options are good because they are free and open source and have an excellent reputation, in addition to each one having its own own community of active users, and very active!
+
+I don't remember where I saw this tip, but for me it was the central factor in my decision and something worth sharing:
+
+If you are a professional who uses analysis tools in a business context, and with experience in Microsoft Excel, my tip is: select R to start your journey in data science. R is a single-threaded object-oriented functional programming language, and once you understand the main commands, it is intuitive to use. As such, it's pretty predictable, which has been great for me as a professional. R has an excellent graphics package that complements the idea of analyzing data or _data wrangling_, which Python programmers often turn to _ggplot2_ to generate beautiful visualizations, or use the ggplot2 theme within Python (lol), even though in recent years the Python's visualization libraries have improved a lot, yet this happens frequently.
+
+On the other hand, if you already have some experience in programming, or are from the computing field, Python is a much more general purpose and more readable language for those coming from this field, and everything you can do in Python is the same as most of the things R is good at.
+
+Both groups have strong communities that share their knowledge on various blogs and events and I really think they are both great choices. Today the market is more heated when it comes to Python, and professionals who know both languages do very well.
+
+Now that I've been using R for a few years (since 2013), I've had the chance to use it a few times in the workplace, and I use it whenever I can, showing the resources this tool offers, creating econometric models and estimation procedures. in modeling for financial risks to provide some business _insights_. I have already carried out many analysis projects for private clients and I feel honored that my efforts to learn are generating results.
+
+A fellow Python expert with an interest in machine learning once saw the few lines of code needed to organize the dataset, train a model, and predict results, and, frankly, he was shocked. We had an awkward R-to-Python conversation trying to understand the differences between data matrices and data frames afterwards, although for me it clarified where R was strong: the ease of preparing and building a model quickly for any type of analysis.
+
+But depending on who you ask, when I first came into contact with R in 2013, R probably had a slight, if not substantial, advantage over Python in user adoption for machine learning and what is now known as data science. Since then, the use of Python has grown substantially and it would be difficult to argue against the fact that Python is the new favorite, although the race may be tighter than one might expect given the enthusiasm of Python fans supporting the new and Brilliant tool with biggest hype.
+
+In recent years, Python has benefited greatly from the rapid maturation of free add-ons such as the _Scikit-learn_ machine learning framework, the _Pandas_ data structure library, the _Matplotlib_ graphing library, and the _Jupyter_ notebook interface, among several other open applications. Source libraries that make it easier than ever to do data science in Python. Of course, these libraries only brought Python to par with what R and RStudio could do long ago! However, Python is comparatively fast and memory efficient – at least relative to R – which may have contributed to the fact that Python is now arguably the language most frequently taught in formal programs in data science. and quickly gained adoption across business domains.
+
+Rather than indicating the imminent death of R, because Python's rise is steep. In fact, the use of R is also growing rapidly, and R and RStudio are becoming more popular than ever. Although students sometimes ask whether it's worth starting with R rather than jumping straight to Python, there are still many good reasons to choose to learn machine learning with R over the alternative.
+
+Please note that these justifications are quite subjective – not just mine, but any justification on the internet will be like this – and there is no right answer for everyone, so I hesitate to put this in writing! However, as someone who still uses R almost daily as part of my work for a large corporation, here are a few things I've noticed:
+
+   - As I mentioned above, R may be more intuitive and easier to learn for people with a background in social sciences or business (such as economics, marketing, and so on), while Python may make more sense for computer scientists and other types of engineers .
+  
+   - R tends to be used more like a “calculator” where you type a command and something happens; In general, coding in Python tends to require more consideration of loops and other program flow commands (this distinction is disappearing over time with additional functionality in Python libraries).
+  
+   - R uses relatively few types of data structures (those included are adapted for data analysis) and the frequently used spreadsheet-type data format is a built-in data type; Comparatively, Python has many specialized data structures and uses libraries like _NumPy_ or _Pandas_ , and for array data format, each has its own syntax.
+  
+   - R and its packages can be easier to install and update than Python, in part because Python is managed by some operating systems by default, and maintaining separate dependencies and environments is a challenge (modern Python installation tools and managers of packages addressed this simultaneously, in some ways making the problem worse!).
+  
+   - R is typically slower and more memory-intensive than Python for data manipulation and iteration over large data structures, but if the data fits in memory, this difference is somewhat insignificant. For real? If you don't work with BigData, you probably don't even feel this difference; R has improved in this area, R is making data preparation faster and easier, and for data that doesn't fit in memory there are workarounds (R with BigData), but this is admittedly one of Python's biggest advantages.
+  
+   - R has the support and vision of the Posit team (formerly known as RStudio) driving innovation and making R easier and more enjoyable to use in a unified software environment (RStudio Desktop); In contrast, Python's innovations are occurring on multiple fronts, offering more “right” ways to accomplish the same thing (for better or worse).
+  
+
+Hopefully, the reasons above will give you the confidence to begin your journey. There is no shame in starting with R (as some people think), whether you stay with R long-term, use it side-by-side with other languages like Python, or major in something entirely different, the fundamental principles you learn will be transferred to any language (a clear example is: if you haven't yet learned SQL and already understand the basics of _Tidyverse_, you will have an easier time studying SQL, or vice versa) or tools you choose. Although code written in R is much “prettier” to me, I highly recommend that you use the right tool for the job, whatever it may be. You may find, as I did, that R and RStudio are your tools of choice for many real-world data science and machine learning projects - even if you occasionally take advantage of Python's unique strengths!
+
+In the end, my recommendation is: just pick one and get started. Although I will still need to learn a lot more about Python to get the unique benefits each language offers, amplified through collaboration. The good thing about this is that, using RStudio, an IDE for R, it is possible to use Python and SQL as well.
+
+
+::: callout-note
+# Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
+
+<a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug =hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"/></a>
+:::

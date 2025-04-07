@@ -1,0 +1,148 @@
+---
+title: "Can Economists Become Data Scientists?"
+author: "Henrique Costa"
+date: "2018-10-29"
+categories: [Economics, Theory, Data Science, Econometrics]
+description: "Economics and Data Science"
+image: "feature.jpg"
+doi: 10.59350/ggmnk-ke432
+---
+
+![](feature.jpg)
+
+When it comes to job titles, data scientist is one of the biggest buzzwords in recent years. It is also one of the fastest growing fields of professional activity. Can an economist really be a data scientist? What skills are needed?
+
+Exposed as the ["sexiest job of the 21st century"](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century) by ***Harvard Business Review***, here I will discuss the reasons why an economist proclaims himself as a Data Scientist, and that goes far beyond *hype*.
+
+Data Scientist, this is the new field of activity that everyone is talking about these days, and that almost everyone wants to be part of it now. It is certainly a very interesting field of professional activity, as it was born from the combination of multidisciplinary and complementary techniques, which did not require much scientific formalism and academic consolidation to be called a Science or Profession. Why?
+
+The term and the field of activity have existed for a long time, but thinking about the *hype* that perhaps it is for a simple reason: the first to give themselves the luxury of calling themselves Data Scientist, were already excellent professionals in the techniques they corroborated for its creation, that is, they were already qualified professionals in certain areas that today have been shaped as necessary techniques to be a Data Scientist.
+
+It is not particularly easy to define Data Science as a whole or in main "necessary" techniques, but here I want to talk about why an economist can proclaim himself as a "Data Scientist".
+
+As some people may know, on LinkedIn or elsewhere (social media), some professionals call themselves Data Scientists. But why? How did these people become data scientists? Why after studying Physics, Computer Engineering, Mathematics, Statistics, Economics or any other professional training are now suddenly part of this field? This is among other questions that many ask.
+
+## Why can an economist be a data scientist?
+
+The great thing here is that it is not necessary to study this in a "formal school", such as professional courses, technologists or a university degree (of course, nowadays there are all these things, even postgraduate programs focused on this area , but as we are living in the information age, where a cascade of information is available on the internet and freely accessible, the need to have a certificate or diploma is almost nil), so why should I, as an economist, have the right to call me a Data Scientist?
+
+If you think about it, we are used to following the path where you graduate in a specific field like Economics, so you have the right to call yourself an Economist, but what happens when a new field is developing, and you are a part of it? of this growth, and also there was no specific degree or postgraduate degree to become a part of this field?
+
+Economists have a set of skills that can make them successful in this area. Economists have extensive training in articulating complex ideas, something that students in other disciplines often may not have, such as *business sense* where the value generated is *business insight*.
+
+We can ask Economics students a fuzzy question or problem and they answer it with *priori* and *posteriori* analysis based on information (data), and then convert it back into understandable words that a non-economist could understand . This is a very important skill to become a Data Scientist, and one that professionals lack.
+
+Most Data Scientists do not approach problems like Economists do, when they carry out their studies and analyzes using econometrics. In Data Science there is no unifying theory, the objective is to predict the results of the data, the approach has its merits, and predictions prevail in the industry.
+
+However, your training as an economist will help you avoid drawing some inappropriate conclusions from the data, as many data scientists don't have the *feeling* for how deep structural changes can undermine predictions.
+
+But I want to suggest here that economics is --- surprisingly --- a great foundation for Data Science.
+
+Yes! Yes! Yes! Please give me a chance to explain further. I know I'm biased, but I believe there aren't many courses that will give you better training to work in Data Science than economics.
+
+## OK! And so? Is an Economist a Data Scientist or not? How it works?
+
+Looking closely at the descriptions of common positions in Data Science, and the range of subjects at universities that offer undergraduate courses in economics, one can quickly deduce that economics would not be the best training to have.
+
+Because most economics programs don't teach programming languages and databases, not even about projects. What the hell is this **R** guy? **Python**? And what about *Hadoop*? And there's still *Hive* and *Pig*? And now there's **TensorFlow**. This has to be a joke!
+
+Specific skills such as programming and databases are not included in the curriculum or the most important, however, studying Economics can provide a *framework* that will allow you to learn specific skills quickly. And a good economic education is indeed a solid *background* to have.
+
+There are professionals who defend this thesis, as is the case of [Vítor Wilher](https://twitter.com/vitorwilherbr), who, in addition to having a master's degree in economics and responsible for the website [Análise Macro](https://analisemacro.com.br/), He is also a teacher of several programming courses in the R language and data analysis.
+
+This discussion about the importance of knowing how to program a language as a tool that offers an excellent relationship between analytical capacity, data collection and presentation, as well as the potential that this can offer for students and professionals, especially for young people at the beginning of their careers in Economy.
+
+Some reasons that Economists make great Data Scientists, and that no one tells them:
+
+### Economist already knows machine learning!
+
+Before you think about stopping reading, thinking that this article is already "travelling" or that the writer must have gone to a very strange economics college to learn about machine learning, but be careful:
+
+Machine learning is really just a fancy word for statistical and predictive modeling that programmers invented to make their business look better, get more attention, and even keep non-participants out of their club. Maybe they should know something about economics, after all --- scarcity raises prices! (laughter).
+
+{{< tweet user="hcostax" id="1173923414614188032" >}}
+
+
+A well-observed fact is that the first two modules of a machine learning course (I'm commenting on the most popular one on the Coursera website) are linear regression and logistic regression. (sarcastic laughter)
+
+Well, 99.99% of economists who took an introductory econometrics course, this may surprise you, but these economists probably have a deeper knowledge of linear regression than a junior or full-time data scientist.
+
+Just as it can be scary to come across names like "neural networks" or *"support vector machines --- SVM"*, the economist would possibly have to work very hard, even break a sweat to find the term "heteroscedasticity" anywhere in machine learning programs.
+
+To learn more, access these guides:
+
+-   [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
+
+-   [A Neural Network in 11 lines of Python](http://iamtrask.github.io/2015/07/12/basic-python-network/)
+
+But of course, neural networks can be a very deep field, much deeper than the way it has been described. Just like *Recurrent nets*, *convolutional nets*, *deep learning* are much more advanced and complex topics --- and their algorithms are much more powerful.
+
+But for most machine learning applications, an economist should do just fine with simple models: basic neural networks, binary decision trees, regressions, SVMs. And with the statistical basis of most economics courses and econometric applications, you will have no problem understanding these concepts quickly.
+
+### Economists have higher standards
+
+Can you recite all the basic assumptions of the OLS method? What about all the possible threats to the internal and external validity of your model that could compromise your analysis?
+
+Of course you can, I know you are nerds. (hahaha)
+
+At least in my experience as an academic, the discipline of econometrics was temporarily obsessed with finding causal relationships---and making it very clear how difficult this phenomenon is to observe without randomized controlled trials.
+
+Not to mention that most models are sensitive to their own basic assumptions. A serious talk would not end without someone mentioning another possible source of bias, attenuation bias, survival bias, selection bias, measurement error, reverse causality, truncation, censoring, omission, spurious correlation, etc.
+
+For each problem, there was another model --- even more complicated --- to deal with it. A model that could also introduce its own baggage of assumptions and problems. The world of econometrics became confusing and more nebulous as the disciplines advanced, in addition to creating the impression of being uncertain and frustratingly limiting. Then Artificial Intelligence, *Machine Learning* and Data Science emerged to illuminate this dark path.
+
+***Warning:** gross exaggeration ahead.*
+
+{{< tweet user="hcostax" id="1169567629188763649" >}}
+
+Compared to all this, machine learning is wonderfully, charmingly simpler. Instead of solving models explicitly --- based on strict assumptions --- they are estimated iteratively with the gradient method (and its derivatives). Rather than testing or validating the theory behind the event you are trying to study, and carefully selecting explanatory variables and the appropriate model, you can try everything you can think of and see if the answer holds up.
+
+![Albert Einstein: "Insanity is continuing to do the same thing over and over again and expecting different results." Machine Learning:](./img/einstein-machine-learning.png)
+
+Get used to cross-validation and testing, instead of *t-statistics*, why not try some *bootstrapping?* And talking about *bootstrapping*, there are already some studies going on the internet criticizing the use of this technique, but while the discussion does not consolidate, we will continue to use it.
+
+For economists who are enthusiastic about econometrics, this may seem pure blasphemy. But this is only because the expectation is high of finding the same ML that was expected in econometrics. Inference and causal interpretation. However, most of the time, ML is aimed at predicting and finding patterns, not causality. For some models, you can't simply say which variables are most important in predicting outcomes.
+
+And yes! Unfortunately (I bring some truths) neural networks cannot be used to explain the causal effect of the minimum wage on unemployment. But Mr. Economist (who runs models) also cannot expect a model like logit (multinomial) to be used to recognize handwriting. What I want to say here is all about the correct use of the right tools in their applications --- and I'm sure econometrics teaches you very well about this.
+
+### Economists really know how to write coherent reports!
+
+In data science it's not just about fancy algorithms, however, unless you're an academic researcher who just writes theoretical papers (an isolated case, and if, only if, it's true, you probably wouldn't be reading this anyway). , the presentation of results and writing in a simple, concise and coherent way are present in economics.
+
+If an economist works as a data scientist anywhere in the "real world", and will have to present his results to non-technical audiences --- managers, marketers and writers, and clients --- he will have to be able to show why your results are important and how normal people can use and act on them.
+
+As an economist, I bet that most economists wrote their fair share of articles, essays, reports, presentations and dissertations and theses in their temples --- that little work or study room, gloomy and only inhabited by beings of their own species -- - at university using ***MS Excel***, perhaps a ***GRTL***, the bravest ***E-Views***, or even those *outliers* who venture into distant lands using * **Stata***.
+
+**Don't underestimate this skill.** It might generate some comments about how archaic this is, but the fact is that probably having this skill puts the economist well ahead of most computer scientists and mathematicians, statisticians or any other professional when it comes to generating robust analyses, presenting and explaining your work clearly --- and bringing together longer texts that have structures and logic behind them (at least that's what should happen, now whether that actually happens I don't know, I'll let this curiosity in the air).
+
+### Learning programming is not difficult
+
+Unfortunately, to be a data scientist you will probably have to write code scripts. But not excluding the fact that economists did not need to program either. It is true that using Stata can be seen as "programming", however, it is not a "proper" programming language, but it is a great introduction for those starting out in statistical computing. And if there is a possibility to continue to graduate school, many economics programs use other languages---Python is very common, as are R and Matlab.
+
+To the delight of some, Python has become the "lingua franca" of data science, perhaps because it is a generalist language, in addition to being a very readable and easy-to-learn language. But [I](https://twitter.com/hcostax) particularly like R (oops! Preference revealed, successfully detected), as it not only has a large selection of libraries, but also has a widely active community, in addition to be built precisely for this purpose.
+
+The preference for the R language is because it is also powerful, but the syntax is seen as an "ABOMINATION" by programmers of other languages. Matlab is commercial software, and although it is great (and fast) at mathematical computing, and also has an open source alternative (Octave), it is not that common. Julia is a very obscure language and still a little too young to be considered a language that would be well suited to the activities of a data scientist, but it is known so far that users here in Brazil are increasing, even some professionals at the Central Bank of Brazil already use Julia.
+
+### So why doesn't anyone tell you this?
+
+Ultimately, economists should declare themselves as great data scientists, or at least own that term, or do as little as possible to acquire it. But then why doesn't anyone at university tell them that this is a "real world" career choice? On the one hand, one of the reasons is that everything is relatively new. And course structures are slow to change, and how long it takes --- favoring more traditional options in finance, academia, government.
+
+In fact, the college I studied at has a [professor](http://www.roneyfraga.com/), better known as [Roney](https://twitter.com/roneyfraga) who is striving to introduce this change, and add this to the training curriculum of undergraduate students, in addition to others such as professor [Adriano](https://www.facebook.com/profadrianomrfigueiredo/) which has also adopted the use of these programming languages in teaching economics (to be more precise, in time series econometrics), but as said: the process is slow.
+
+But don't think that economists can't act as data scientists in these areas mentioned (finance, academia, government), quite the contrary, it's becoming more common every day. But I also think that there is still a bit of prejudice (or perhaps, a bit of fear) in the economic world against data science, as they defend the thesis that an economist entering into data science is beneath the main cause, as they are concerned with bigger issues.
+
+I'm just sorry, because it's a shame. Because economics gives its graduates a unique *blend* of (statistical) and *soft* (human) skills that are much harder to find in Mathematics departments. Computer Science, Statistics and others.
+
+And perhaps data science roles only benefit from having careful economists (econometric enthusiasts) doing the work. This way, econometricians can make the best use of ML when it comes to testing and cross-validation and algorithmic estimation approaches.
+
+So give yourself a chance and get to know this area that has immense growth potential for the future, and even [Google's Chief Economist](https://qz.com/1296930/hal-varian-googles-chief-economist-thinks-the-world-needs-more-data-scientists/) thinks the world needs more data scientists.
+
+See if this catches your attention, and don't think that just because you don't know what Hessians are, you can't get into Data Science.
+
+I didn't intend to make this a guide for economists on how to become data scientists. But it should possibly give you a lot of things to think about --- and expand your range of possible career options. Keep an eye on the blog, as I will always be posting about this type of subject. In future publications I will be posting small applied exercises, using R or Python to awaken the reader's curiosity to learn.
+
+::: callout-note
+# Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
+
+<a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug =hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"/></a>
+:::

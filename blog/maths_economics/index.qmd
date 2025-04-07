@@ -1,0 +1,69 @@
+---
+title: "The mathematization of Economics"
+author: "Henrique Costa"
+date: "2018-09-21"
+categories: [Economics, Theory, Mathematics]
+description: "Discussing the strong presence of mathematics in economics"
+image: "feature.jpg"
+doi: 10.59350/tvp77-8gp37
+---
+
+![](feature.jpg)
+
+In today's post, I want to start a discussion about the use of mathematics and statistics in economics, and with this shocking sentence:
+
+{{< tweet user=hcostax id=1167043313846935552 >}}
+
+When a person studies economics for the first time, it is likely that they will not encounter "crazy" equations that go beyond basic mathematics. There is a lot of content to learn the various conceptual definitions such as price, supply, demand, costs, profit, etc., in addition to the various market structures.
+
+As you delve deeper into the subject, you realize there is more to it than just simplistic theories and newspaper chatter. So, what would be the best way to explain the concepts of price, quantity of product sold and production cost without referring to a single example without using mathematics?
+
+This *paper*:
+
+> *KATZNER, Donald W. [Why mathematics in economics?](https://www.jstor.org/stable/4538849?seq=1). Journal of Post Keynesian Economics, v. 25, n. 4, p. 561-574, 2003.*
+
+makes a very convincing defense of the use of mathematics in economic science.
+
+Although economics is technically recognized as a social science, students who embark on a "nebulous" adventure (undergraduate course) in this field receive (or should receive) a solid foundation in mathematics. Because determining how scarce resources can be reallocated requires a minimum understanding of mathematics, to calculate what the distribution cost will be and evaluate (quantitatively) among other measures. Thus, the field of economics is full of mathematical equations and applications.
+
+What is learned in teaching economics are mainly linear algebra, calculus and statistics. These are the basis for achieving the infamous econometrics. In algebra it is taught about total cost and total revenue. In calculus the objective is to find the derivatives of indifference and utility curves, profit maximization curves, cost minimization and growth models.
+
+In statistics, economists learn about predictive models and how to determine how likely a certain event is to occur. Econometrics, for some peculiar reasons, is called *"economentira"* for the use of models in which the final objective is to estimate and predict a certain variable.
+
+{{< tweet user=hcostax id=1179532980265586688 >}}
+
+As you progress through related topics, you will find examples such as market demand curves (sum of several individual demand curves) or changes in the supply and price of a *commodity* or calculating the price elasticity of a commodity. consumption, each concept is validated using mathematics. Definitely, a mathematical and statistical approach is needed to have clarity when we arrive at the long-awaited "solution" to the problems proposed to professionals in this area.
+
+![A typical review for the basic econometrics final exam](./img/econometria.jpg)
+
+It has been noted that in the 19th century mathematics was considered as a means of achieving truth; (rational) logic made it imperative to use mathematics to prove any theorems. Many problems posed in economics are therefore motivated to be solved by mathematics. Have these problems really been solved?
+
+Analyzes and studies carried out in the field of applied economics help to explain the interdependent relationship between different variables. An example is trying to explain what causes an increase in the price of a product, such as the price of beef, or an increase in the unemployment rate, or even a drop in inflation and a reduction in the basic interest rate. Mathematical functions are used as a logical tool through **models** from which these phenomena of everyday life can become more understandable.
+
+In fact, there is an exhaustive discussion about the importance of relevant applied work and the uses of these metrics in economic science. It is interesting to know that several economists have been awarded the [Nobel Prize](https://pt.wikipedia.org/wiki/Pr%C3%A9mio_de_Ci%C3%AAncias_Econ%C3%B3micas_em_Mem%C3%B3ria_de_Alfred_Nobel) for applying mathematics/statistics to economics, including the first awarded in 1969 to [Ragnar Frisch and JanTinbergen](https://www.jstor.org/stable/1402316?seq=1). The most interesting thing is that [Leonid Kantorovich](https://pt.wikipedia.org/wiki/Leonid_Kantorovich) he won a Nobel Prize in 1975 in economics for his contribution to the theory of optimal resource utilization and he was a mathematician!
+
+Many students who are looking to pursue a career in economics are advised to take a Mathematics course, as applied studies are covered in mathematics. The use of mathematical models and applications in this area has been notable in the last two decades.
+
+[Economics --- the science that stopped being dark](https://valor.globo.com/eu-e/noticia/2012/10/23/como-a-teoria-economica-deixou-de-ser-uma-ciencia-sombria.ghtml)(In Brazilian Portuguese) , with advances in [Alfred Marshall](https://pt.wikipedia.org/wiki/Alfred_Marshall), with the well-known marginalist revolt that embraced the use of mathematics as an integral part of the economy, now more intensive than ever. Mathematics plays the main role in many sciences like physics, chemistry, etc. And it's really the backbone of the modern economy.
+
+Mathematics in economics is an important tool in decision making. Economists are hired by companies or governments to investigate and estimate the risk or likely outcomes of an event. Economists who work for companies in the financial market make mathematical calculations (models) to assess whether the risk of investing in a certain asset outweighs its potential benefits.
+
+Economists use their mathematical "skills" to find ways to reallocate money, even in counterintuitive ways. Using a profit-maximization chart, economists can advise a venue to sell only 75% of available tickets, rather than 100%, a strategy to maximize its profit. If the company lowers ticket prices to attract new concert-goers and fill the stadium to capacity, it could make less money than selling just 75% of the tickets at a much higher price.
+
+Economists also use mathematics to determine the long-term success of a business, even when some factors are unpredictable. For example, an economist working for an airline uses forecasting based on econometric models to determine the price of fuel for two months ahead. The company uses this data to block fuel prices or to protect the fuel, the famous *"hedge"*. Bijan Vasigh, author of the book ["Introduction to Air Transport Economics"](https://www.amazon.com/Introduction-Air-Transport-Economics-Applications/dp/1409454878), explains that the [Southwest Airlines](https://www.southwest.com) gained a financial advantage over other operators due to its fuel hedging strategy.
+
+However, not everything is rosy, much less a bed of roses, there are limitations to what can be done using econometric models in the economy. Economists perform mathematical calculations with imperfect information. Their economic models are useless in times of natural disasters, union strikes or any other catastrophic event. Furthermore, mathematics rarely helps economists predict irrational human behavior. A fundamental assumption of economics is that humans act rationally. However, humans often make irrational decisions based on choices and preferences, or even pure fear or love. These two factors cannot be accounted for in an economic model.
+
+But there are already some techniques, including in the field of *Machine Learning* that try to solve such problems. But that is the subject of another post that I will make soon.
+
+But the potential of these methods is recognized and therefore extremely useful, and economists are reviewing the way calculations are carried out to account for intangible effects, such as pollution. Mathematical models are necessarily based on simplifying assumptions, so they are not likely to be perfectly realistic. Mathematical models also lack the nuances that can be found in narrative models. The point is that mathematics is a tool, but it is not the only tool or even the best tool that economists should use.
+
+So, what is your opinion regarding the use of mathematics and statistics in economic science? Is it possible to think about economics without at least mathematizing it?
+
+Adapted from [original](https://medium.com/the-empirical-mode/o-uso-da-matem%C3%A1tica-na-economia-6d6de2e39dab).
+
+::: callout-note
+# Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
+
+<a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug =hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"/></a>
+:::

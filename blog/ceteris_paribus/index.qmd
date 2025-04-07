@@ -1,0 +1,77 @@
+---
+title: "The Ceteris Paribus Condition"
+author: "Henrique Costa"
+date: "2018-09-16"
+categories: [Economics, Theory]
+description: "A reflection on causal, empirical or inductive logic relationships"
+image: "feature.jpg"
+doi: 10.59350/jxf43-hc691
+---
+
+![](feature.jpg)
+
+I will present here some personal reflections on a concept that is considered very simple and perhaps common in economics, but which is labeled as the height of ignorance for making an assumption that cannot be observed in reality, but which in my view is a mistake. mistake. The concept: *ceteris paribus*, or better said “the *ceteris paribus* condition”.
+
+Well, have you ever tried to imagine the meaning of *ceteris paribus?* The idea is somewhat simplistic, and means **“everything else is constant”** or **“all other things remaining unchanged”**. Nothing new on earth, because economists, students and enthusiasts know this condition well, and learn in the academic world that in economic analysis there is always this *ceteris paribus* thing.
+
+Examining a fact under the condition that an effect **X**, *ceteris paribus* had a cause **Y**, or better said, that a specific effect occurs from an isolated cause without other potential causes interfering or not have no involvement.
+
+If you think about this statement in depth, this condition seems a bit absurd, as in reality a specific effect never has an isolated cause, as it is a static look at dynamic events. There are many criticisms about this assumption, but most are based on a misinterpretation of the *ceteris paribus* condition.
+
+Understanding the literal meaning of the term does not make you an expert user of it. It is a fact that observing or studying something and having to say that if everything else is constant, it goes beyond the idea that the results may be unrealistic. However, you need to abstract to understand. Is it possible for this condition to happen? As? And when does it occur?
+
+If you want to carry out a methodologically in-depth study to understand scientific applications, please consume **Chapter 2** of this masterpiece:
+
+> *Schlicht, E. (1985). [Isolation and Aggregation in Economics](https://epub.ub.uni-muenchen.de/3/1/schlicht_isolation.pdf). \[S.l.\]: Springer Verlag. ISBN 0-387-15254-7*.
+
+To illustrate, I will simulate a situation and use an example where I prepare my morning coffee, and so by assumption, I will sweeten it (as sugar is not welcome in my coffee). So I have the following ingredients: water, sugar, and 100% Arabica coffee powder (my favorite). We know that to prepare coffee, roughly speaking, you just need to mix all the ingredients. Of course, as long as certain ingredients are suitable for this, as in the case of water, which must reach a preparation temperature (considered ideal) close to 90°C, but there is always that classic doubt: how much sugar would be ideal for sweetening? My coffee?
+
+In econometric models there is a similar methodology: to estimate a variable **Y** it is necessary to mix the "effects" of variables **X**, as long as some variables **X** meet certain conditions, as there will be moments in which it will be necessary to apply transformations to the variables, changing from level to logarithmic, applying differences, among others. As is the process of changing the water temperature.
+
+To solve this problem, a common economist will say:
+
+> Hmm, Depends!
+
+But a Scientist will say:
+
+> For an *ex-ante* analysis, it will be necessary to test hypotheses!
+
+Firstly, we outline two hypotheses that 1 liter of coffee will be prepared, and so 1 liter of water (at a temperature of 90°C), 4 spoons of coffee powder (as I like strong coffee) are used, so we can say the following :
+
+-   As an **alternative hypothesis**, the sugar value is zero, supposedly the presence of sugar in the drink is practically zero, so the drink “needs to be sweetened”.
+
+-   As a **null hypothesis**, the sugar value is non-zero, where at least one spoon (or cube) of sugar is supposedly added, as we are curious about the positive marginal effects, so the drink is being sweetened.
+
+We are interested in inferring about the **null hypothesis**, as it is from there that we consider sweetening the drink, once the alternative hypothesis occurs, simply apply the variable **sugar** (for a better fit of the model ) until the drink is sweetened.
+
+Now we can identify the marginal effects that the increase in sugar can have on the drink, and a very curious irony is that we are here looking for an optimization solution. Testing the sugar variation in order to seek an optimal point of balance, that is, where the addition of sugar can lead to a point of balance between sucrose and the acidity of the coffee, making the drink sweetened to the consumer's taste.
+
+Theoretically, you add a spoonful of sugar and try it; If it's not at the desired point, you can add a little more and try again; and so on until you reach the flavor you like most. In other words, after mixing the ingredients, only the amount of sugar will be adjusted, keeping the proportions or quantities of the other ingredients fixed. It is in this “keeping fixed” that the *Ceteris Paribus* condition occurs, that is, **“keeping all other things unchanged”**.
+
+This is exactly what the *ceteris paribus* condition means: keeping some variables fixed in their proportions and quantities or constants (in this case, the water and coffee powder after mixing and infusing) and changing only the sugar, to understand the effect that sugar has on the variable **Y** (the coffee itself).
+
+One of the first appearances of the use of this term in economics is contained in the work of the 17th century economist Richard Cantillon, with the title:
+
+> *Cantillon, Richard. [Essays on the Nature of Commerce in General](https://books.google.com.br/books?id=J1ZPAWiGRucC&lpg=PP1&pg=PP1#v=onepage&q&f=false). Routledge, 2017*.
+
+In economic science, this concept is widely used in models, mainly in neoclassical theory, as it allows the interpretation of cause and effect events in the real world in a representative way.
+
+Imagine having to deal with the enormous and growing flow of information that is generated every day, at all times? Everyone would go crazy!!! So, economic theory simplifies the analysis so that it is possible to find solutions to problems: it is like disregarding some information (or considering that they are constant, that they do not change or do not alter your analysis) and then analyze the effects of other information.
+
+Do not think that this is absurd, or that it is unrealistic, if for any moment this thought crossed your mind, please review it immediately, as economic theory is made up of many, many observations, deductions and tests of the events of cause and effect of the real world, and that is why it is recognized as science today.
+
+Another very interesting example in which I was able to observe the effect of this condition is in the financial market, the theory of portfolio diversification guarantees the reduction of the investor's exposure to non-systemic risk, that is, disregarding non-systemic risk and keeping it fixed close to null may be an effect of the *ceteris paribus* condition, as the investor diversifies his investments to protect himself from the fluctuation of such assets, trying to keep non-systemic risk to the minimum possible, and when a correlation closer to zero is achieved, he assumes that it is free of non-systemic risk and thus alters its market positions based on systemic risks. There are so many real examples that use this condition that it goes beyond sweetening my coffee.
+
+The condition *ceteris paribus* is present in our daily lives, in almost everything it is possible to find it, but there will be skeptics who will say: *“but in reality nothing remains fixed or constant”*, or even *“that is part of the idea of general balance, and in general it is unreal, because balance is not empirical”*, well, the real world is dynamic, but in my humble opinion, the world has always been in a natural balance, the dynamism of the real world is nothing more is than equilibria interacting simultaneously, so therefore, the *ceteris paribus* condition can make some real and palpable sense.
+
+Finally, the *ceteris paribus* condition means that we can keep some variables fixed or constant to analyze only what matters; This condition is very useful for creating econometric models used to better calculate and interpret real-world phenomena.
+
+I hope I have fulfilled my mission of exploring the *ceteris paribus* condition in a similar way for a better understanding. In the next publications I will deal with models in economic science, to explain why this science is so full of mathematical and statistical applications.
+
+Adapted from [original](https://medium.com/the-empirical-mode/a-condi%C3%A7%C3%A3o-ceteris-paribus-para-ado%C3%A7ar-meu-caf%C3%%20A9-7da9b9326604).
+
+::: callout-note
+# Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
+
+<a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=hcostax&amp;button_colour=5F7FFF&amp;font_colour =ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"/></a>
+:::
